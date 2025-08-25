@@ -1,8 +1,8 @@
 # Sway Keyboard Layout Switcher
 
-This utility allows you to have window-specific keyboard layout on SwayWM, a.k.a keyboard layout per window.
+This utility allows window-specific keyboard layout on SwayWM, a.k.a keyboard layout per window.
 
-It remembers keyboard layout at the moment you've changed focus from the window, and then restores the remembered layout when you focuse the window again.
+It remembers keyboard layout at the moment you've changed focus from the window, and restores the remembered layout when you focuse the window again.
 
 I don't guarantee there're no bugs here. If you have any, leave an issue, and I will look at it.
 
