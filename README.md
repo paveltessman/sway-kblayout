@@ -37,11 +37,30 @@ After the build process is complete, the executable will be in the `dist/` direc
 The simplest way is to just run the executable:
 
 ```bash
-./sway-kbswitcher-1.0.0
+./sway-kbswitcher-1.1.0 run
 ```
 
 Or add this to the SwayWM config:
 
 ```
-exec /path/to/sway-kbswitcher-1.0.0
+exec /path/to/sway-kbswitcher-1.0.0 run
 ```
+
+You can specify default layout:
+
+```
+exec /path/to/sway-kbswitcher-1.0.0 run --default-layout [index]
+```
+
+`[index]` is the layout index you want. Probably it's either `0` or `1`. Maybe I will add an option to get all layout indices in the future.
+
+Default layout is the layout that is chosen when there is no saved layout for the focused window (e.g. when the window has just been created and it is focused for the first time). If no default layout is specified, then the current one is chosen.
+
+
+Also is can be run it with debug logs enabled:
+
+```
+./sway-kbswitcher-1.1.0 run --debug
+```
+
+But I don't know why would you do that.
